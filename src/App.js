@@ -1,13 +1,32 @@
 import React from 'react'
-import Header from './components/Header/Header'
+import AppLayout from './components/AppLayout'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import CoinGraph from './components/Body/LeftBody/CoinGraph/CoinGraph'
+import Error from './components/Error/Error'
 import Body from './components/Body/Body'
 
 const App = () => {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Body />,
+        },
+        {
+          path: "/coin",
+          element: <CoinGraph />,
+        }
+      ],
+      errorElement: <Error />
+    }
+  ])
+
   return (
-    <div className='App'>
-      <Header/>
-      <Body/>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
