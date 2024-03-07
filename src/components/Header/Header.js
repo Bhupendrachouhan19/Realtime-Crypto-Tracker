@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import KoinXLogo from "../../utils/assets/KoinXLogo.svg";
 
 const Header = () => {
@@ -36,16 +37,16 @@ const Header = () => {
         >
           {navLinks.map((nav) => (
             <li key={nav.name} className="my-6 md:min-w-fit">
-              <a
-                href={nav.link}
+              <Link
+                to={nav.link}
                 className="hover:text-blue-500 hover:cursor-pointer duration-300"
               >
                 {nav.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li className="bg-[#1b4bef] my-6 w-fit md:min-w-fit text-white px-6 py-1 rounded-md hover:bg-blue-800 hover:cursor-pointer duration-700 transition-all ease-in-out">
-            <a href="/">Get Started</a>
+            <Link to="/">Get Started</Link>
           </li>
         </ul>
       </div>
