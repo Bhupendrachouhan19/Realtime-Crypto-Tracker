@@ -13,7 +13,7 @@ const Header = () => {
   const handleOpenMenu = () => setOpen(!open);
 
   return (
-    <div className="md:flex justify-between items-center shadow-md w-full md:fixed md:top-0 md:left-0 bg-white">
+    <div className="md:flex justify-between items-center shadow-md w-full bg-white">
       <div>
         <img
           src={KoinXLogo}
@@ -29,20 +29,22 @@ const Header = () => {
         <ion-icon name={open ? "close" : "menu"}></ion-icon>
       </div>
 
-      <div className="flex md:mr-6">
+      <div className="flex md:mr-8">
         <ul
-          className={`${
-            open ? "top-15" : "top-[-490px]"
-          } md:flex pl-4 border border-blue-400 rounded-b-2xl md:border-none items-center md:w-auto md:justify-around pb-1 absolute md:static md:gap-4 lg:gap-x-10 bg-white w-full transition-all ease-in-out duration-700 md:z-auto opacity-0 md:opacity-100`}
+          className={`${open? 'top-auto'  : 'top-[-496px]' } md:flex md:justify-around items-center md:pb-0 pb-3 absolute md:static
+          bg-white md:z-auto md:gap-10 w-full md:w-auto pl-3 md:border-none border-2 border-blue-400 rounded-b-2xl transition-all duration-500 ease-in-out `}
         >
           {navLinks.map((nav) => (
             <li key={nav.name} className="my-6 md:min-w-fit">
-              <a href={nav.link} className="hover:text-blue-500 duration-300">
+              <a
+                href={nav.link}
+                className="hover:text-blue-500 hover:cursor-pointer duration-300"
+              >
                 {nav.name}
               </a>
             </li>
           ))}
-          <li className="bg-[#1b4bef] my-6 w-fit text-white px-6 py-1 rounded-md hover:bg-blue-800 duration-300">
+          <li className="bg-[#1b4bef] my-6 w-fit md:min-w-fit text-white px-6 py-1 rounded-md hover:bg-blue-800 hover:cursor-pointer duration-700 transition-all ease-in-out">
             <a href="/">Get Started</a>
           </li>
         </ul>
