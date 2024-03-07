@@ -5,8 +5,8 @@ import Body from './components/Body/Body'
 const App = () => {
   return (
     <div className='App'>
-      <Header />
-      <Body />
+      <Header/>
+      <Body/>
     </div>
   )
 }
