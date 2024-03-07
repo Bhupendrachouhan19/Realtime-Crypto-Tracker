@@ -17,7 +17,7 @@ const App = () => {
           element: <Body />,
         },
         {
-          path: "/coin",
+          path: "/coins/coin",
           element: <CoinGraph />,
         }
       ],

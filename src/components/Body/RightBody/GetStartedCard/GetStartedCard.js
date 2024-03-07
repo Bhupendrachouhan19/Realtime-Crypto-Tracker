@@ -2,8 +2,10 @@ import React from 'react'
 
 const GetStartedCard = () => {
   return (
-    <div>GetStartedCard</div>
-  )
+    <div className="flex justify-center border-4 border-red-500 w-full">
+      GetStartedCard
+    </div>
+  );
 }
 
 export default GetStartedCard
