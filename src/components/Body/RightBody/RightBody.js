@@ -9,7 +9,7 @@ const RightBody = () => {
         <GetStartedCard />
       </div>
 
-      <div className="flex mx-auto md:justify-normal my-3 lg:w-[20vw] lg:h-[34vh] md:w-[40vw] md:h-[25vh] lg:w-[20vw] lg:h-[35vh] w-96 h-96">
+      <div className="flex mx-auto md:justify-normal my-3 md:w-[40vw] md:h-[25vh] lg:w-[20vw] lg:h-[35vh] w-96 h-96">
         <TrendingCoins />
       </div>
     </div>
