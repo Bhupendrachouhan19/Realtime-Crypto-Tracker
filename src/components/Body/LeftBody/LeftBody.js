@@ -10,35 +10,35 @@ import RightBody from "../RightBody/RightBody";
 
 const LeftBody = () => {
   return (
-    <div className="flex-col md:items-start md:w-full gap-2">
-      <div className="lg:flex lg:items-center lg:mt-10">
-        <div className="flex lg:w-3/4 items-center justify md:w-[85vw] md:mx-auto md:h-[60vh]">
+    <div className="flex-col  md:w-full gap-2">
+      <div className="flex-col gap-2">
+        <div className="flex justify-start mb-3 md:h-[95vh] lg:w-[75vw] md:items-center md:pb-[4rem] bg-blue-300">
           <CoinGraph />
         </div>
-        <RightBody />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex-col  md:w-full gap-2"></div>
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <Overview />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <Sentiment />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <AboutCoin />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <Team />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <Tokenomics />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem] bg-blue-300">
         <Recommendation />
       </div>
     </div>

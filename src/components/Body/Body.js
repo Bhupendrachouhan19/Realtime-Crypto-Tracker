@@ -4,9 +4,12 @@ import RightBody from "./RightBody/RightBody";
 
 const Body = () => {
   return (
-    <div className="md:flex ">
+    <div className="lg:flex items-start">
       {/* Left Body */}
       <LeftBody />
+      
+      {/* Right Body */}
+      <RightBody />
     </div>
   );
 };

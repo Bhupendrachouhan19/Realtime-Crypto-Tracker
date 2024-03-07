@@ -14,7 +14,7 @@ const Header = () => {
   const handleOpenMenu = () => setOpen(!open);
 
   return (
-    <div className="md:flex md:sticky md:top-0 md:left-auto justify-between items-center shadow-md w-full bg-white">
+    <div className="md:flex md:sticky md:top-0 md:left-auto justify-between items-center shadow-md w-full bg-white lg:z-10">
       <div>
         <img
           src={KoinXLogo}
