@@ -1,5 +1,5 @@
 import React from "react";
-import CoinGraph from "./CoinGraph/CoinGraph";
+import CoinGraph from "./CoinGraph/TradingViewWidget";
 import Overview from "./Overview/Overview";
 import Sentiment from "./Sentiment/Sentiment";
 import AboutCoin from "./AboutCoin/AboutCoin";
@@ -30,11 +30,11 @@ const LeftBody = () => {
       </div>
 
       <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
-        <Team />
+        <Tokenomics />
       </div>
 
       <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
-        <Tokenomics />
+        <Team />
       </div>
 
       <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
