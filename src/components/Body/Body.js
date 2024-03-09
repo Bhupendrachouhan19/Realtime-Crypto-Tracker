@@ -4,7 +4,7 @@ import RightBody from "./RightBody/RightBody";
 
 const Body = () => {
   return (
-    <div className="lg:flex items-start">
+    <div className="lg:flex items-start bg-[#eff2f5]">
       {/* Left Body */}
       <LeftBody />
       

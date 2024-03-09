@@ -68,7 +68,7 @@ class TradingViewWidget extends React.PureComponent {
   render() {
     return (
       <div
-        className="tradingview-widget-container mt-3 mx-auto min-w-[93vw] md:min-h-[60vh] lg:min-w-[65vw] lg:min-h-[65vh] border-4 border-red-500"
+        className="tradingview-widget-container flex items-center mt-3 mx-auto min-w-[93vw] md:min-h-[60vh] lg:min-w-[65vw] lg:min-h-[65vh] border-4 border-red-500"
         ref={this.container}
       >
         <div className="tradingview-widget-container__widget"></div>
