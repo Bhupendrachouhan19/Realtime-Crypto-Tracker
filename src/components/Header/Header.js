@@ -35,7 +35,7 @@ const Header = () => {
           className={`${
             open ? "top-auto" : "top-[-496px]"
           } md:flex md:justify-around items-center md:pb-0 pb-3 absolute md:static
-          bg-white md:z-auto md:gap-10 w-full md:w-auto pl-3 md:border-none border-2 border-blue-400 rounded-b-2xl transition-all duration-500 ease-in-out `}
+          bg-white md:z-auto md:gap-10 w-full md:w-auto pl-3 md:border-none border-2 border-blue-400 rounded-b-2xl transition-all duration-500 ease-in-out z-10`}
         >
           {navLinks.map((nav) => (
             <li key={nav.name} className="my-6 md:min-w-fit">
