@@ -3,22 +3,26 @@ import getStarted from "../../../../utils/assets/images/getStarted.png"
 
 const GetStartedCard = () => {
   return (
-    <div className="flex justify-center items-center border-4 bg-[#244b9f] hover:bg-[#26249f] transition-all ease-in duration-700 rounded-3xl border-red-500 w-full">
-      <div className="flex-col text-center justify-between w-[85%] h-[85%] rounded-3xl">
-        <div className='flex-col h-[85%]'>
-          <span className="block text-white font-semibold mb-2 text-2xl md:text-[1.3rem] lg:text-2xl lg:leading-5">
+    <div className="flex justify-center items-center border-4 bg-[#244b9f] hover:bg-[#26249f] transition-all ease-in duration-700 rounded-3xl border-red-500">
+      <div className="flex flex-col content-between justify-center text-center w-[85%] lg:h-[85%] rounded-3xl">
+        <div className="flex-col h-fit">
+          <span className="block text-white font-semibold mb-2 text-2xl md:text-[1.3rem] lg:text-2xl">
             Get Started with KoinX
           </span>
-          <span className="block text-white font-semibold mb-2 text-2xl md:text-[1.3rem] lg:text-2xl lg:leading-5">
+          <span className="block text-white font-semibold mb-2 text-2xl md:text-[1.3rem] lg:text-2xl">
             for FREE
           </span>
           <p className="text-white md:text-[0.8 rem] lg:text-[0.9rem]">
-            with our range of features that you can equip for free, KoinX allows
+            W ith our range of features that you can equip for free, KoinX allows
             you to be more educational and aware of your tax reports.
           </p>
-          <div className="flex justify-center items-center">
-            <img src={getStarted} alt="Get Started" className="h-24 mt-3 lg:h-max-[7rem] lg:h-[7rem] lg:mt-1" />
-          </div>
+        </div>
+        <div className="flex flex-grow justify-center items-center">
+          <img
+            src={getStarted}
+            alt="Get Started"
+            className="h-24 lg:h-[9rem]"
+          />
         </div>
 
         <div>

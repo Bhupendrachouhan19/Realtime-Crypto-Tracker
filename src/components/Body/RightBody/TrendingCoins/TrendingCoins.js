@@ -2,8 +2,20 @@ import React from 'react'
 
 const TrendingCoins = () => {
   return (
-    <div className="flex justify-center border-4 border-red-500 w-full">
-      TrendingCoins
+    <div className="flex-col justify-center border-4 border-red-500 w-full h-fit">
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
+      <div>TrendingCoins</div>
     </div>
   );
 }

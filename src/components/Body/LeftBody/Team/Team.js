@@ -1,9 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { teamData } from '../../../../utils/assets/constants/teamData';
+import TeamMemberCard from './TeamMemberCard';
 
 const Team = () => {
   return (
-    <div className="flex justify-center border-4 border-red-500 min-w-[93vw] h-96 md:w-4/5 md:h-[90%]">
-      Team
+    <div className="border-4 border-red-500 max-w-[93vw] min-h-96 ">
+      <div className="ml-6 mb-3">
+        <span className="text-4xl font-bold">Team</span>
+      </div>
+      <div className="mx-6 text-justify">
+        <p className='text-2xl'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
+          nihil! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in commod.
+        </p>
+      </div>
+      <div>
+        {teamData.map((teamMate) => (
+          <TeamMemberCard
+            name={teamMate.name}
+            profilePicPath={teamMate.profilePicPath}
+            designation={teamMate.designation}
+            bio={teamMate.bio}
+            key={teamMate.name}
+          />
+        ))}
+      </div>
     </div>
   );
 }
