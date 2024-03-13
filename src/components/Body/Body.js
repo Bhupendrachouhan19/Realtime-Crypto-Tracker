@@ -7,7 +7,7 @@ const Body = () => {
     <div className="lg:flex items-start relative bg-[#eff2f5]">
       {/* Left Body */}
       <LeftBody />
-      
+
       {/* Right Body */}
       <RightBody />
     </div>

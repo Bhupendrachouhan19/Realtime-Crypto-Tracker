@@ -15,10 +15,8 @@ const TeamMemberCard = ({ name, profilePicPath, designation, bio }) => {
         <div className="mt-3">
           <span className="font-bold text-lg">{name}</span>
         </div>
-        <div>
-          <span className="text-[#7b8c96] text-sm">
-            {designation}
-          </span>
+        <div className="leading-[0rem]">
+          <span className="text-[#7b8c96] text-sm ">{designation}</span>
         </div>
       </div>
       <div className="text-justify mx-3 md:ml-5 md:mr-3">

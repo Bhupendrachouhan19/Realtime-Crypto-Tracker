@@ -11,12 +11,11 @@ const LeftBody = () => {
   return (
     <div className="flex-col md:w-full gap-2">
       <div className="flex-col gap-2">
-        <div className="flex justify-start mb-3 md:h-[95vh] lg:w-[75vw] md:items-center md:pb-[4rem]">
+        <div className="flex  mb-3 md:h-[95vh] lg:w-[75vw] md:items-center md:pb-[4rem]">
           <CoinGraph />
         </div>
       </div>
 
-      <div className="flex-col  md:w-full gap-2"></div>
       <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
         <Overview />
       </div>

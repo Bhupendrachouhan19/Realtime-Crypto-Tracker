@@ -1,47 +1,71 @@
 import React from 'react'
 import YouMayAlsoLikeCard from './YouMayAlsoLikeCard'
 import searchTrending from "../../../../../utils/assets/constants/searchTrending.json";
-import Carousel from './Carousel';
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css"
 
-const YouMayAlsoLike = () => {
+const YouMayAlsoLike = ({heading}) => {
   const coins = searchTrending?.coins;
-  const box = document.querySelector(".carousel-container");
+  
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 6,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
-  const handlePrevBtn = () => {
-    const screenWidth = document.querySelector(".carousel-container").offsetWidth;
-    document.querySelector(".carousel-container").scrollLeft = document.querySelector(".carousel-container").scrollLeft - screenWidth;
-    console.log(screenWidth);
-  }
-  
-  const handleNextBtn = () => {
-    const screenWidth = document.querySelector(".carousel-container").offsetWidth;;
-    document.querySelector(".carousel-container").scrollLeft = document.querySelector(".carousel-container").scrollLeft + screenWidth;
-    console.log(screenWidth);
-  }
-  
+  const CustomRightArrow = ({ onClick }) => {
+    return (
+      <div className='flex absolute right-0 bg-white border rounded-full text-4xl shadow-lg'>
+        <ion-icon
+          name="chevron-forward-outline"
+          onClick={() => onClick()}
+        ></ion-icon>
+      </div>
+    );
+  };
+
+  const CustomLeftArrow = ({ onClick }) => {
+    return (
+      <div className="flex absolute left-0 bg-white border rounded-full text-4xl shadow-lg">
+        <ion-icon
+          name="chevron-back-outline"
+          onClick={() => onClick()}
+        ></ion-icon>
+      </div>
+    );
+  };
+
   return (
-    <div className=" border-3 border-green-300 px-2">
-      <div className="font-bold">You May Also Like</div>
-      <div className="overflow-x-auto relative mr-auto">
-        <Carousel className="carousel-container">
+    <div className="flex flex-col gap-9 my-6">
+      <div className="text-3xl font-bold mx-6">{heading}</div>
+      <div>
+        <Carousel
+          responsive={responsive}
+          customRightArrow={<CustomRightArrow />}
+          customLeftArrow={<CustomLeftArrow />}
+          rewind={true}
+          rewindWithAnimation={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+        >
           {coins.map((coin) => (
             <YouMayAlsoLikeCard key={coin.item.coin_id} coinData={coin} />
           ))}
         </Carousel>
-        <div className="flex items-center justify-between absolute inset-0">
-          <button
-            className="flex top-0 left-0 text-5xl bg-white rounded-full items-center h-fit text-gray-200 hover:text-gray-400 cursor-pointer shadow drop-shadow-xl"
-            onClick={handlePrevBtn}
-          >
-            <ion-icon name="chevron-back-circle-outline"></ion-icon>
-          </button>
-          <button className="flex text-5xl bg-white rounded-full items-center h-fit text-gray-200 hover:text-gray-400 cursor-pointer shadow drop-shadow-xl">
-            <ion-icon
-              name="chevron-forward-circle-outline"
-              onClick={handleNextBtn}
-            ></ion-icon>
-          </button>
-        </div>
       </div>
     </div>
   );

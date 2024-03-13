@@ -8,24 +8,24 @@ const YouMayAlsoLikeCard = ({ coinData }) => {
   const usdPercent = usd.toFixed(2).toString();
 
   return (
-    <div className="flex flex-col gap-3 p-4 border-gray-300 border-2 rounded-xl min-w-72">
-      <div className="flex items-center grow gap-3 border">
+    <div className="flex flex-col mx-4 p-3 border-gray-300 border-2 rounded-xl min-w-72">
+      <div className="flex items-center grow gap-3">
         <div className="rounded-full w-9 h-9 overflow-hidden">
           <img crossOrigin="anonymous" src={small} alt={name} />
         </div>
-        <div>{symbol}</div>
+        <div className="text-2xl">{symbol}</div>
         <div
-          className={`${usdPercent[0] === "-" ? `bg-red-400` : `bg-green-400`} font-bold px-[0.12rem] rounded-lg text-sm`}
+          className={`${usdPercent[0] === "-" ? `bg-red-200` : `bg-green-200`} rounded-[0.2rem] text-lg px-2`}
         >
           {usdPercent}%
         </div>
       </div>
-      <div className="pl-5">{price}</div>
-      <div className="flex">
+      <div className="pl-5 font-semibold text-4xl">{price}</div>
+      <div className="flex mx-auto">
         <img
           crossOrigin="anonymous"
           src={sparkline}
-          className=" w-72 p-4 border"
+          className=" w-72 p-4"
           alt={name}
         />
       </div>
