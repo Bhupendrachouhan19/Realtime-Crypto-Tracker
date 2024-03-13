@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TeamMemberCard = ({ name, profilePicPath, designation, bio }) => {
-  console.log(profilePicPath)
+  // console.log(profilePicPath)
   return (
     <div className="flex flex-col md:flex-row md:items-center text-center md:text-left p-4 gap-2 bg-[#e8f4fd] mx-6 mt-6 rounded-xl border border-gray-800">
       <div className="flex-col justify-center text-center md:ml-3 md:mt-3">

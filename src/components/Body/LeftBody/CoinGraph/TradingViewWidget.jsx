@@ -62,7 +62,7 @@ class TradingViewWidget extends React.PureComponent {
           }`;
 
     this.container.current.appendChild(this.script);
-    console.log("Component is mounted");
+    // console.log("Component is mounted");
   }
 
   render() {

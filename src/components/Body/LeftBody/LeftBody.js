@@ -37,7 +37,7 @@ const LeftBody = () => {
         <Team />
       </div>
 
-      <div className="flex justify-center my-3 md:h-[100vh] md:items-end md:pb-[4rem]">
+      <div className="flex justify-center my-3 md:items-end md:pb-[4rem]">
         <Recommendation />
       </div>
     </div>
