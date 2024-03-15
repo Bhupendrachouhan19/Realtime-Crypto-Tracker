@@ -1,46 +1,9 @@
 /* For Webkit browsers */
-input[type="range"]::-webkit-slider-thumb {
+#slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
-  width: 16px; /* Adjust the width of the thumb */
-  height: 16px; /* Adjust the height of the thumb */
-  background-color: white; /* Set the background color of the thumb */
-  border-radius: 50%; /* Make the thumb round */
-  cursor: pointer; /* Set cursor to pointer when hovering over the thumb */
-}
-
-/* For Moz browsers */
-input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 16px; /* Adjust the width of the thumb */
-  height: 16px; /* Adjust the height of the thumb */
-  background-color: white; /* Set the background color of the thumb */
-  border-radius: 50%; /* Make the thumb round */
-  cursor: pointer; /* Set cursor to pointer when hovering over the thumb */
-}
-
-#sliderValue-container span {
-  position: absolute;
-  top: 20px;
-  height: 45px;
-  width: 45px;
-  color: gray;
-  font-weight: 500;
-  transform: translateX(-50%);
-  line-height: 55px;
-  z-index: 2;
-}
-
-#sliderValue-container span:after {
-  position: absolute;
-  content: "";
-  height: 45px;
-  width: 45px;
-  background: red;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  border: solid 3px greenyellow;
-  border-radius: 0 50% 50% 50%;
-  z-index: -1;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  user-select: none;
 }
