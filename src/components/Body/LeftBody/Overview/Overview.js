@@ -1,9 +1,12 @@
 import React from 'react'
+import Performance from './Performance/Performance';
+import Fundamentals from './Fundamentals/Fundamentals';
 
 const Overview = () => {
   return (
-    <div className="flex justify-center border-4 border-red-500 min-w-[93vw] h-96 md:w-4/5 md:h-[90%]">
-      Overview
+    <div className="flex flex-col gap-5 border-4 rounded-xl border-red-500 bg-white max-w-[93vw] grow">
+      <Performance />
+      <Fundamentals />
     </div>
   );
 }

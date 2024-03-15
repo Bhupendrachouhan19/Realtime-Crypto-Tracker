@@ -4,7 +4,7 @@ import TeamMemberCard from './TeamMemberCard';
 
 const Team = () => {
   return (
-    <div className="border-4 bg-white pt-5 pb-6 rounded-xl border-red-500 max-w-[93vw] min-h-96 ">
+    <div className="border-4 bg-white pt-5 pb-6 rounded-xl border-red-500 max-w-[93vw] grow ">
       <div className="ml-6 mb-3">
         <span className="text-4xl font-bold">Team</span>
       </div>
