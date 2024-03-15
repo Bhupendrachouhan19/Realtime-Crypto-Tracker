@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import "./performance.css";
 
-const Colormap = (mini, maxi) => {
+const Colormap = ({low, high}) => {
   let [value, setValue] = useState(0);
   let [valueWithComma, setValueWithComma] = useState(0);
 
-    let min = 46930, max = 1054216064;
+    let min = low, max = high;
     
   return (
-    <div className="flex relative flex-col  md:w-[70%] justify-center items-center">
+    <div className="flex relative flex-col md:w-[70%] justify-center items-center">
       <input
         type="range"
         name="rangeSlider"
+        value="0"
         min={min}
         max={max}
         onInput={(e) => {
@@ -30,7 +31,7 @@ const Colormap = (mini, maxi) => {
         <div className="text-left">
           <ion-icon name="caret-up"></ion-icon>
         </div>
-        <div className="text-gray-500 translate-x-[-50%]">{valueWithComma}</div>
+        <div className="text-gray-500 md:text-xl font-semibold translate-x-[-50%]">${valueWithComma}</div>
       </div>
     </div>
   );
