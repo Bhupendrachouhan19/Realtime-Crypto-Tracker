@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutCoin = () => {
   return (
-    <div className="flex justify-center border-4 border-red-500 min-w-[93vw] h-96 md:w-4/5 md:h-[90%]">
+    <div className="flex justify-center items-center bg-cyan-400 border-4 rounded-xl border-red-500 min-w-[93vw] h-96 md:w-4/5 md:h-[90%]">
       AboutCoin
     </div>
   );

@@ -5,7 +5,7 @@ const TeamMemberCard = ({ name, profilePicPath, designation, bio }) => {
   return (
     <div className="flex flex-col md:flex-row md:items-center text-center md:text-left p-4 gap-2 bg-[#e8f4fd] mx-6 mt-6 rounded-xl border border-gray-800">
       <div className="flex-col justify-center text-center md:ml-3 md:mt-3">
-        <div className="mx-auto w-28 h-28 md:w-32 md:h-36 rounded-lg overflow-hidden">
+        <div className="mx-auto w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden">
           <img
             src={require("../../../../utils/assets/" + profilePicPath)}
             alt={name}

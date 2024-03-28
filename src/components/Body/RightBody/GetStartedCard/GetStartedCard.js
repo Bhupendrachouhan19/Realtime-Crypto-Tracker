@@ -3,7 +3,7 @@ import getStarted from "../../../../utils/assets/images/getStarted.png"
 
 const GetStartedCard = () => {
   return (
-    <div className="flex justify-center items-center border-4 bg-[#244b9f] hover:bg-[#26249f] transition-all ease-in duration-700 rounded-3xl border-red-500">
+    <div className="flex justify-center items-center border-4 bg-[#244b9f] hover:bg-[#26249f] transition-all ease-in duration-700 rounded-3xl">
       <div className="flex flex-col content-between justify-center text-center w-[85%] lg:h-[85%] rounded-3xl">
         <div className="flex-col h-fit">
           <span className="block text-white font-semibold mb-2 text-2xl md:text-[1.3rem] lg:text-2xl">
